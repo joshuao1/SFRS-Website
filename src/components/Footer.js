@@ -29,7 +29,7 @@ function Footer() {
                 <Typography>
                     Students for Refugees Society,
                     Mailbox 175, Level 1, Union House
-                    The University of Melbourne, Vic, 3010
+                    The University of Melbourne, VIC, 3010
                 </Typography>
             </div>
             <div style={styles.normal}>
