@@ -20,7 +20,10 @@ const posts = [
     {id: 2, title: 'Installation', content: 'You can install React from npm.'}
   ];
   
-
+const styles = {
+  marginLeft: 'auto',
+  marginRight: '0',
+}
 
 function NavBar() {
     return (
@@ -30,19 +33,22 @@ function NavBar() {
             <Typography variant='h4' color='inherit'>
               Students for Refugees Society
             </Typography>
+            <div style={styles}>
+              <Button href="/" color='inherit'>
+                Home
+              </Button>
+              <Button href="/about" color='inherit'>
+                About
+              </Button>
+              <Button href="/blog" color='inherit'>
+                Blog
+              </Button>
+              <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfeqA-btyc8kVmd-kDwwbtMBgec1hx9DfjBdeHhY8T3QSTB_Q/viewform" color='inherit'>
+                Sign Up
+              </Button>
+            </div>
+
             
-            <Button href="/" color='inherit'>
-              Home
-            </Button>
-            <Button href="/about" color='inherit'>
-              About
-            </Button>
-            <Button href="/blog" color='inherit'>
-              Blog
-            </Button>
-            <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfeqA-btyc8kVmd-kDwwbtMBgec1hx9DfjBdeHhY8T3QSTB_Q/viewform" color='inherit'>
-              Sign Up
-            </Button>
           </Toolbar>
         </AppBar>     
         <Switch>

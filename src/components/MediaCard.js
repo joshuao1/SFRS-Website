@@ -11,15 +11,20 @@ import LOGO from "../images/sfrs logo cropped.jpg"
 
 function MediaCard(props) {
   return (
-    <Card> 
+    <Card
+      style={props.cardStyle}
+    > 
       <CardMedia
         component='img'
         image = {props.image}
         title={props.title}
         height={props.height}
+        style={props.mediaStyle}
       />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="h2">
+      <CardContent
+        style={props.contentStyle}
+      >
+        <Typography gutterBottom variant="h4" component="h2">
           {props.title}
         </Typography>
         <Typography component="p">
