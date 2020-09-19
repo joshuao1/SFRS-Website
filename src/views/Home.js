@@ -3,11 +3,14 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
-import Container from '@material-ui/core/Container'
 import Grid from '@material-ui/core/Grid'
 
 // Import components
 import MediaCard from '../components/MediaCard';
+
+// Import CSS Styles
+import {titleStyle, cardStyle} from '../styles/Global'
+
 
 // Import graphics
 import EDUC from "../assets/images/graduated.svg"
@@ -16,45 +19,7 @@ import CONNECT from "../assets/images/network.svg"
 import GROUP from "../assets/images/group.svg"
 import LOGO from "../assets/images/sfrs logo cropped.jpg"
 
-const styles = {
-  media: {
-     //paddingTop: '56.25%', // 16:9
-     paddingLeft: '250px',
-     position: 'relative',
-     marginBottom: '50px',
-     //objectFit: "cover",
-     height: "500px",
-     width: "100%"
-  },
-  card: {
-     position: 'relative',
-     margin: "10px"
-  },
-  content: {
-     position: 'absolute',
-     top: '150px',
-     left: '10px',
-     color: 'black',
-     backgroundColor: '',
-     width: '515px',
-     marginBottom: '50px',
-    },
-  aimMedia: {
-    height: "100px",
-    marginTop: "20px",
-    maxWidth: "100%",
-    objectFit: "contain"
-  },
-  aimCard: {
-    margin: "10px",
-    height: "350px",
-  },
-  aimTitle: {
-    align: 'center',
-  }
 
-
-}
 
 const ContentText = {
   headline : {
@@ -88,8 +53,8 @@ const ContentText = {
 function Home() {
   return (
     <div>
-      <MediaCard title={ContentText.headline.title} text={ContentText.headline.text} image={LOGO} height='550' contentStyle={styles.content} cardStyle={styles.card} mediaStyle={styles.media}/>
-      <Card style={styles.card}>
+      <MediaCard title={ContentText.headline.title} text={ContentText.headline.text} image={LOGO} height='550' contentStyle={titleStyle.content} cardStyle={titleStyle.card} mediaStyle={titleStyle.media}/>
+      <Card style={titleStyle.card}>
         <br/>
         <Typography variant='h4' align='center' gutterBottom>
           Our Goals
@@ -97,7 +62,7 @@ function Home() {
         <Grid container spacing='1'>
           {ContentText.aims.map(aim => (
             <Grid item key={aim.title} xs='6' md='3'>
-              <MediaCard title={aim.title} text={aim.text} cardStyle={styles.aimCard} mediaStyle={styles.aimMedia} image={aim.image} titleAlign={styles.aimTitle}/>
+              <MediaCard title={aim.title} text={aim.text} cardStyle={cardStyle.aimCard} mediaStyle={cardStyle.aimMedia} image={aim.image} titleAlign={cardStyle.aimTitle}/>
             </Grid>
           ))}
         </Grid>

@@ -5,6 +5,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import {Divider} from '@material-ui/core'
 
 
 
@@ -25,9 +26,12 @@ function MediaCard(props) {
         <Typography gutterBottom variant="h4" align="center">
           {props.title}
         </Typography>
-        <Typography component="p" align="center">
+        <Divider variant="middle" />
+        <br/>
+        <Typography gutterBottom component="p" align="center">
           {props.text}
         </Typography>
+        <br/>
       </CardContent>
     </Card>
   );
