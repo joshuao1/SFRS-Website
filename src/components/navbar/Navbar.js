@@ -10,6 +10,7 @@ import AppBar from '@material-ui/core/AppBar';
 
 import { Toolbar, Typography } from '@material-ui/core';
 import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 import About from '../../views/About'
 import Blog from '../../views/Blog'
@@ -21,36 +22,40 @@ const posts = [
   ];
   
 const styles = {
-  marginLeft: 'auto',
-  marginRight: '0',
+  links: {
+    marginLeft: 'auto',
+    marginRight: '0',
+  },
 }
 
 function NavBar() {
     return (
       <Router>
-        <AppBar color='primary' position='static'>
-          <Toolbar>
-            <Typography variant='h4' color='inherit'>
-              Students for Refugees Society
-            </Typography>
-            <div style={styles}>
-              <Button href="/" color='inherit'>
-                Home
-              </Button>
-              <Button href="/about" color='inherit'>
-                About
-              </Button>
-              <Button href="/blog" color='inherit'>
-                Blog
-              </Button>
-              <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfeqA-btyc8kVmd-kDwwbtMBgec1hx9DfjBdeHhY8T3QSTB_Q/viewform" color='inherit'>
-                Sign Up
-              </Button>
-            </div>
+        <CssBaseline>
+          <AppBar color='primary' position='sticky' style={styles.bar}>
+            <Toolbar>
+              <Typography variant='h5' color='inherit'>
+                Students for Refugees Society
+              </Typography>
+              <div style={styles.links}>
+                <Button href="/" color='inherit'>
+                  Home
+                </Button>
+                <Button href="/about" color='inherit'>
+                  About
+                </Button>
+                <Button href="/blog" color='inherit'>
+                  Blog
+                </Button>
+                <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfeqA-btyc8kVmd-kDwwbtMBgec1hx9DfjBdeHhY8T3QSTB_Q/viewform" color='inherit'>
+                  Sign Up
+                </Button>
+              </div>
 
-            
-          </Toolbar>
-        </AppBar>     
+              
+            </Toolbar>
+          </AppBar>   
+        </CssBaseline>  
         <Switch>
           <Route path="/about">
             <About />
