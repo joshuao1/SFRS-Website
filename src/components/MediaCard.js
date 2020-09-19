@@ -6,17 +6,15 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 
-const styles = {
-};
+import LOGO from "../images/sfrs logo cropped.jpg"
+
 
 function MediaCard(props) {
-  const { classes } = props;
-  const img = require(props.image);
   return (
-    <Card className={classes.card}> 
+    <Card> 
       <CardMedia
-        className={classes.media}
-        image = {img}
+        component='img'
+        image = {props.image}
         title={props.title}
         height={props.height}
       />
@@ -36,4 +34,4 @@ MediaCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(MediaCard);
+export default MediaCard;
