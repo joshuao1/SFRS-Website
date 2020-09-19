@@ -24,17 +24,17 @@ export const titleStyle = {
 };
 
 export const cardStyle = {
-    aimMedia: {
+    media: {
         height: "100px",
         marginTop: "20px",
         maxWidth: "100%",
         objectFit: "contain"
       },
-      aimCard: {
+      card: {
         margin: "10px",
         height: "350px",
       },
-      aimTitle: {
+      title: {
         align: 'center',
       }  
 }

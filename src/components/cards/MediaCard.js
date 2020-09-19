@@ -11,18 +11,14 @@ import {Divider} from '@material-ui/core'
 
 function MediaCard(props) {
   return (
-    <Card
-      style={props.cardStyle}
-    > 
+    <Card style={props.cardStyle}> 
       <CardMedia
         component='img'
-        image = {props.image}
+        image={props.image}
         title={props.title}
         style={props.mediaStyle}
       />
-      <CardContent
-        style={props.contentStyle}
-      >
+      <CardContent style={props.contentStyle}>
         <Typography gutterBottom variant="h4" align="center">
           {props.title}
         </Typography>

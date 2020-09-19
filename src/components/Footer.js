@@ -11,7 +11,7 @@ const styles = {
         marginRight: '0',
       },
     normal: {
-        margin: '20px',
+        margin: 'auto',
         textDecoration: 'none'
     }
 }
@@ -23,11 +23,10 @@ function Footer() {
             <Toolbar>
             
             <div style={styles.normal}>
-                <img src={UMSU} alt='UMSU Logo' height='60px' margin='20px'/>
+                <img src={UMSU} alt='UMSU Logo' height='60px'/>
             </div>
             <div style={styles.normal}>
                 <Typography>
-                    Students for Refugees Society,
                     Mailbox 175, Level 1, Union House
                     The University of Melbourne, VIC, 3010
                 </Typography>
@@ -44,7 +43,7 @@ function Footer() {
                     <FacebookIcon color='primary'/>
                 </IconButton>
             </div>
-            <div style={styles.normal}>
+            <div style={styles.links}>
                 <IconButton size='medium' color='primary' href='https://www.instagram.com/sfr_unimelb/'>
                     <InstagramIcon/>
                 </IconButton>

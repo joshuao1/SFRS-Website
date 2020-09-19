@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid'
 
 // Import components
-import MediaCard from '../components/MediaCard';
+import MediaCard from '../components/cards/MediaCard';
 
 // Import CSS Styles
 import {titleStyle, cardStyle} from '../styles/Global'
@@ -53,7 +53,7 @@ const ContentText = {
 function Home() {
   return (
     <div>
-      <MediaCard title={ContentText.headline.title} text={ContentText.headline.text} image={LOGO} height='550' contentStyle={titleStyle.content} cardStyle={titleStyle.card} mediaStyle={titleStyle.media}/>
+      <MediaCard title={ContentText.headline.title} text={ContentText.headline.text} image={LOGO} contentStyle={titleStyle.content} cardStyle={titleStyle.card} mediaStyle={titleStyle.media}/>
       <Card style={titleStyle.card}>
         <br/>
         <Typography variant='h4' align='center' gutterBottom>
@@ -62,7 +62,7 @@ function Home() {
         <Grid container spacing='1'>
           {ContentText.aims.map(aim => (
             <Grid item key={aim.title} xs='6' md='3'>
-              <MediaCard title={aim.title} text={aim.text} cardStyle={cardStyle.aimCard} mediaStyle={cardStyle.aimMedia} image={aim.image} titleAlign={cardStyle.aimTitle}/>
+              <MediaCard title={aim.title} text={aim.text} cardStyle={cardStyle.card} mediaStyle={cardStyle.media} image={aim.image}/>
             </Grid>
           ))}
         </Grid>
