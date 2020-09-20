@@ -20,12 +20,12 @@ function TitleCard(props) {
         className={classes.titleMedia}
       />
       <CardContent className={classes.titleContent}>
-        <Typography gutterBottom variant="h4" align="center">
+        <Typography gutterBottom variant="h4" align="left">
           {props.title}
         </Typography>
         <Divider variant="middle" />
         <br/>
-        <Typography gutterBottom component="p" align="center">
+        <Typography gutterBottom component="p" align="left">
           {props.text}
         </Typography>
         <br/>

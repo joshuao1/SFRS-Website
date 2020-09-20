@@ -27,7 +27,7 @@ export const useStyles = makeStyles({
     titleContent: {
         position: 'absolute',
         top: '170px',
-        paddingLeft: '75px',
+        paddingLeft: '85px',
         margin: 'auto',
         color: 'white',
         backgroundColor: '',

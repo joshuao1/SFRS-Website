@@ -14,6 +14,10 @@ const styles = {
     normal: {
         margin: 'auto',
         textDecoration: 'none'
+    },
+    social: {
+        margin: 'auto',
+        height: '150px'
     }
 }
 
@@ -41,12 +45,12 @@ function Footer() {
                 </a>
             </div>
             <div style={styles.normal}>
-                <IconButton size='medium' href='https://www.facebook.com/unimelbsfr'>
+                <IconButton href='https://www.facebook.com/unimelbsfr'>
                     <FacebookIcon color='primary'/>
                 </IconButton>
             </div>
             <div style={styles.normal}>
-                <IconButton size='medium' color='primary' href='https://www.instagram.com/sfr_unimelb/'>
+                <IconButton color='primary' href='https://www.instagram.com/sfr_unimelb/'>
                     <InstagramIcon/>
                 </IconButton>
             </div>
