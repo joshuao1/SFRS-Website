@@ -14,7 +14,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 
 //Import styles
-import { useStyles } from '../../styles/Global'
+import { useStyles } from '../../styles/styles'
 
 import About from '../../views/About'
 import Blog from '../../views/Blog'

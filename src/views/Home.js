@@ -10,7 +10,7 @@ import IconCard from '../components/cards/IconCard';
 import TitleCard from '../components/cards/TitleCard';
 
 // Import CSS Styles
-import {useStyles} from '../styles/Global'
+import {useStyles} from '../styles/styles'
 
 // Import content
 import {content} from '../assets/content/home/homeContent'

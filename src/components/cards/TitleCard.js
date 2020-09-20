@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import {Divider} from '@material-ui/core'
 
 // Import CSS
-import {useStyles} from '../../styles/Global'
+import {useStyles} from '../../styles/styles'
 
 function TitleCard(props) {
   const classes=useStyles();

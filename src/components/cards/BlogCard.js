@@ -6,7 +6,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import {CardActionArea, Divider} from '@material-ui/core'
 
-import {useStyles} from '../../styles/Global'
+import {useStyles} from '../../styles/styles'
 
 
 

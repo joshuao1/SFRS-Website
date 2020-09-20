@@ -11,8 +11,10 @@ const theme = createMuiTheme({
     primary: {
       // Purple and green play nicely together.
       //main: '#1976d2',
-      main: '#5271ff',
-      dark: '#6f79a8',
+      //Red 700
+      main: '#d32f2f',
+      dark: '#9a0007',
+      light: '#ff6659',
     },
     secondary: {
       // 
