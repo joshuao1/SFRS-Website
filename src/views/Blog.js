@@ -5,6 +5,7 @@ import Grid from '@material-ui/core/Grid'
 // Import components
 import MediaCard from '../components/cards/MediaCard';
 import TitleCard from '../components/cards/TitleCard';
+import BlogCard from '../components/cards/BlogCard';
 
 // Import CSS Styles
 import {titleStyle, cardStyle} from '../styles/Global'
@@ -24,7 +25,7 @@ function Blog(props) {
                 <Grid container spacing='1'>
                     {content.events.map(event => (
                         <Grid item key={event.title} xs='6' md='3'>
-                            <MediaCard title={event.title} text={event.text} image={event.image}/>
+                            <BlogCard date={event.date} title={event.title} text={event.text} image={event.image}/>
                         </Grid>
                 ))}
                 </Grid>

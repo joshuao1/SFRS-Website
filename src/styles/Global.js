@@ -55,3 +55,12 @@ export const avatarStyle = {
         margin: "10px",
     }
 }
+
+export const blogStyle = {
+    cardMedia: {
+        height: "150px",
+        marginTop: "20px",
+        maxWidth: "100%",
+        objectFit: "contain"
+    },
+}
