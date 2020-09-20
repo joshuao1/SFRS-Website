@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fade52db897af42aba5887532611b206",
+    "revision": "29e33a2147f511e611410fe8b6d6df83",
     "url": "/index.html"
   },
   {
-    "revision": "cb6bbf6947a2a0057da0",
-    "url": "/static/js/2.2011ceae.chunk.js"
+    "revision": "b623dda27927c12fcf22",
+    "url": "/static/js/2.8ccc4587.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/static/js/2.2011ceae.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.8ccc4587.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "de9acfeff548a427fac0",
-    "url": "/static/js/main.8e9ad44b.chunk.js"
+    "revision": "897327ca4a63fd7d3103",
+    "url": "/static/js/main.c5120977.chunk.js"
   },
   {
     "revision": "d6368b5ecd134c27111d",
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/refugee_legal_banner.73dbadf9.jpg"
   },
   {
-    "revision": "e98ac1a833a34f13158dfd7ddb72dcf4",
-    "url": "/static/media/sfrs logo cropped.e98ac1a8.jpg"
+    "revision": "7c8cd22b73742829b2f80ab648bcdc73",
+    "url": "/static/media/sfrs logo cropped.7c8cd22b.jpg"
   },
   {
     "revision": "42145f37e02e339e71632296d16c2e56",
@@ -62,5 +62,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "7e41aa4c5ed87d70155e6064ac365618",
     "url": "/static/media/sfrs trivia night.7e41aa4c.png"
+  },
+  {
+    "revision": "8ef1ada2e34e0be3d480802381a356f4",
+    "url": "/static/media/sfrs_logo_dark.8ef1ada2.jpg"
+  },
+  {
+    "revision": "a5ae3180d0380026c2d5d78ecba70075",
+    "url": "/static/media/trivia night attendance.a5ae3180.png"
   }
 ]);

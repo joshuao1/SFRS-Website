@@ -75,4 +75,4 @@ export const useStyles = makeStyles({
     blogText: {
 
     },
-});
+}, {index: 1});
