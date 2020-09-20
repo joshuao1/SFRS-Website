@@ -1,48 +1,54 @@
-export const titleStyle = {
-    media: {
-       //paddingTop: '56.25%', // 16:9
-       //paddingLeft: 'auto',
-       marginLeft:'auto',
-       position: 'relative',
-       marginBottom: 'auto',
-       //objectFit: "cover",
-       height: "500px",
-       width: "auto",
-       //maxHeight: '550px',
-       //minHeight: '450px'
-    },
-    card: {
-       position: 'relative',
-       margin: "10px",
-    },
-    content: {
-       position: 'absolute',
-       top: '170px',
-       left: '10px',
-       color: 'black',
-       backgroundColor: 'white',
-       width: '500px',
-      },  
-};
+import { makeStyles } from '@material-ui/core/styles';
 
-export const cardStyle = {
-    media: {
+export const useStyles = makeStyles({
+    card: {
+        margin: '10px'
+    },
+    root: {
+        background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+        border: 0,
+        borderRadius: 3,
+        boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
+        color: 'white',
+        padding: '0 30px',
+    },
+    titleMedia: {
+        marginLeft:'auto',
+        position: 'relative',
+        marginBottom: 'auto',
+        height: "500px",
+        width: "auto",
+    },
+    titleCard: {
+        position: 'relative',
+        margin: "10px",
+        backgroundColor: 'black'
+    },
+    titleContent: {
+        position: 'absolute',
+        top: '170px',
+        left: '10px',
+        color: 'white',
+        backgroundColor: '',
+        width: '500px',
+    },  
+    iconMedia: {
         height: "100px",
         marginTop: "20px",
         maxWidth: "100%",
         objectFit: "contain"
-      },
-      card: {
+    },
+    iconCard: {
         margin: "10px",
         height: "350px",
-      },
-      title: {
+    },
+    iconTitle: {
         align: 'center',
-      }  
-}
+    },
+    iconText: {
 
-export const avatarStyle = {
-    avatar: {
+    },
+    avatarMedia: {
         height: '150px',
         width: '150px',
         marginTop: '10px',
@@ -50,17 +56,22 @@ export const avatarStyle = {
         marginRight: 'auto',
         objectFit: 'none'
     },
-    card: {
+    avatarCard: {
         height: "300px",
         margin: "10px",
-    }
-}
+    },
+    blogCard: {
+        height: "400px",
+        margin: '10px',
 
-export const blogStyle = {
-    cardMedia: {
-        height: "150px",
+    },
+    blogMedia: {
+        height: "200px",
         marginTop: "20px",
         maxWidth: "100%",
         objectFit: "contain"
     },
-}
+    blogText: {
+
+    },
+});

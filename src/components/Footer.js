@@ -1,14 +1,15 @@
 import { Button, IconButton, Toolbar, Typography } from '@material-ui/core';
 import React from 'react';
+import { useTheme } from '@material-ui/core/styles';
 
 import UMSU from '../assets/images/UMSUnobg.png'
 import FacebookIcon from '@material-ui/icons/Facebook';
 import InstagramIcon from '@material-ui/icons/Instagram';
 
 const styles = {
-    links: {
+    umsu: {
         marginLeft: 'auto',
-        marginRight: '0',
+        marginRight: '30px',
       },
     normal: {
         margin: 'auto',
@@ -17,12 +18,13 @@ const styles = {
 }
 
 function Footer() {
+    const theme = useTheme();
     return (
         <div>
             <br/>
             <Toolbar>
             
-            <div style={styles.normal}>
+            <div style={styles.umsu}>
                 <img src={UMSU} alt='UMSU Logo' height='60px'/>
             </div>
             <div style={styles.normal}>
@@ -43,7 +45,7 @@ function Footer() {
                     <FacebookIcon color='primary'/>
                 </IconButton>
             </div>
-            <div style={styles.links}>
+            <div style={styles.normal}>
                 <IconButton size='medium' color='primary' href='https://www.instagram.com/sfr_unimelb/'>
                     <InstagramIcon/>
                 </IconButton>

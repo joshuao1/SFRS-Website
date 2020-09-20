@@ -4,13 +4,14 @@ import GRASS from "../../images/grass.svg"
 import CONNECT from "../../images/network.svg"
 import GROUP from "../../images/group.svg"
 import LOGO from "../../images/sfrs logo cropped.jpg"
+import LOGODARK from '../../images/sfrs_logo_dark.jpg'
 
 export const content = {
     headline : {
       title: 'For A More Inclusive Future',
       text: "The University of Melbourne Students for Refugees Society is a student group striving to improve the experiences of refugees and asylum seekers.",
     },
-    banner: LOGO,
+    banner: LOGODARK,
     aims : [
       {
         title: "Educate",

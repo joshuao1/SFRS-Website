@@ -1,27 +1,23 @@
 import React from 'react';
 
-import Toolbar from '@material-ui/core/Toolbar';
-
-import Button from '@material-ui/core/Button';
-
-
-
 import NavBar from "./components/navbar/Navbar.js";
 import Footer from './components/Footer.js';
 
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import { purple } from '@material-ui/core/colors';
 
 const theme = createMuiTheme({
   palette: {
     primary: {
       // Purple and green play nicely together.
-      main: purple[500],
+      //main: '#1976d2',
+      main: '#5271ff',
+      dark: '#6f79a8',
     },
     secondary: {
-      // This is green.A700 as hex.
-      main: '#11cb5f',
+      // 
+      main: '#eceff1',
+      contrastText: 'black',
     },
   },
 });

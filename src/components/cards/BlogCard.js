@@ -7,34 +7,33 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import {CardActionArea, Divider} from '@material-ui/core'
 
-import {blogStyle, cardStyle} from '../../styles/Global'
+import {useStyles} from '../../styles/Global'
 
 
 
 function BlogCard(props) {
+  const classes=useStyles();
   return (
     <CardActionArea>
-        <Card style={cardStyle.card}> 
+        <Card className={classes.blogCard}> 
         
             <CardMedia
             component='img'
             image={props.image}
             title={props.title}
-            style={blogStyle.cardMedia}
+            className={classes.blogMedia}
             />
-            <CardContent style={cardStyle.content}>
-                <Typography gutterBottom variant="subtitle2" align="center" style={{backgroundColor:'white'}}>
+            <CardContent>
+                <Typography gutterBottom variant="subtitle2" align="center" className={classes.blogText}>
                     {props.date}
                 </Typography>
-
-                <Divider variant="middle" />
-                <br/>
-                <Typography gutterBottom variant="h5" align="center" style={{backgroundColor:'white'}}>
+              
+                <Typography gutterBottom variant="h5" align="center" className={classes.blogText}>
                     {props.title}
                 </Typography>
                 <Divider variant="middle" />
                 <br/>
-                <Typography gutterBottom component="p" align="center" style={{backgroundColor:'white'}}>
+                <Typography gutterBottom component="p" align="center" className={classes.blogText}>
                     {props.text}
                 </Typography>
                 <br/>

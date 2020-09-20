@@ -8,17 +8,17 @@ import Typography from '@material-ui/core/Typography';
 import {Avatar, Divider} from '@material-ui/core'
 
 // Import CSS
-import {avatarStyle} from '../../styles/Global' 
+import {useStyles} from '../../styles/Global' 
 
 function AvatarCard(props) {
+    const classes=useStyles();
     return (
         <div>
-            <Card style={avatarStyle.card}>
+            <Card className={classes.avatarCard}>
                 <CardMedia>
-                    <Avatar alt={props.name} src={props.image} style={avatarStyle.avatar}/>
-
+                    <Avatar alt={props.name} src={props.image} className={classes.avatarMedia}/>
                 </CardMedia>
-                <CardContent style={avatarStyle.card}>
+                <CardContent className={classes.avatarCard}>
                     <Typography gutterBottom variant="h5" align="center">
                         {props.name}
                     </Typography>

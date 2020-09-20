@@ -2,13 +2,14 @@
 import TRIVIA from '../../images/sfrs trivia night.png'
 import REFLEGAL from '../../images/refugee_legal_banner.jpg'
 import IGM from '../../images/IGM.jpg'
+import TRIVIASHOT from '../../images/trivia night attendance.png'
 
 export const content = {
     headline: {
       title: 'Our Blog',
       text: 'Previous Events And Write-Ups',      
     },
-    banner: REFLEGAL,
+    banner: TRIVIASHOT,
     events: [
         {
           title: "A Conversation With Refugee Legal",

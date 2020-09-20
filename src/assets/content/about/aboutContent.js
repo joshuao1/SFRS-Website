@@ -21,7 +21,7 @@ export const content = {
         image: JONG
       },
       {
-        name: 'Tzur Ko Green Rochvarger',
+        name: 'Tzur Ko Geen Rochvarger',
         title: 'Secretary',
         image: JONG
       },

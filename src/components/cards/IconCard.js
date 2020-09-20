@@ -7,25 +7,26 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import {Divider} from '@material-ui/core'
 
-import {cardStyle} from '../../styles/Global'
+import {useStyles} from '../../styles/Global'
 
 
-function MediaCard(props) {
+function IconCard(props) {
+  const classes=useStyles();
   return (
-    <Card style={cardStyle.card}> 
+    <Card className={classes.iconCard}> 
       <CardMedia
         component='img'
         image={props.image}
         title={props.title}
-        style={cardStyle.media}
+        className={classes.iconMedia}
       />
-      <CardContent style={cardStyle.content}>
-        <Typography gutterBottom variant="h5" align="center" style={{backgroundColor:'white'}}>
+      <CardContent className={classes.iconCard}>
+        <Typography gutterBottom variant="h5" align="center" className={classes.iconTitle}>
           {props.title}
         </Typography>
         <Divider variant="middle" />
         <br/>
-        <Typography gutterBottom component="p" align="center" style={{backgroundColor:'white'}}>
+        <Typography gutterBottom component="p" align="center" className={classes.iconText}>
           {props.text}
         </Typography>
         <br/>
@@ -34,8 +35,8 @@ function MediaCard(props) {
   );
 }
 
-MediaCard.propTypes = {
+IconCard.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default MediaCard;
+export default IconCard;
