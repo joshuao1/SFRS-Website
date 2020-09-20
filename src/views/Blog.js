@@ -1,6 +1,7 @@
-import { Card, makeStyles, Typography } from '@material-ui/core';
+import { Card, Typography } from '@material-ui/core';
 import React from 'react';
 import Grid from '@material-ui/core/Grid'
+import { useTheme } from '@material-ui/core/styles';
 
 // Import components
 import TitleCard from '../components/cards/TitleCard';
@@ -14,10 +15,11 @@ import {content} from '../assets/content/blog/blogContent'
 
 function Blog(props) {
     const classes=useStyles();
+    const theme = useTheme();
     return (
         <div>
             <TitleCard title={content.headline.title} text={content.headline.text} image={content.banner}/>
-            <Card className={classes.card}>
+            <Card className={classes.card} style={{backgroundColor:theme.palette.secondary.main}}>
                 <br/>
                 <Typography variant='h5' align='center' gutterBottom style={{fontSize:'225%'}}>
                     Events

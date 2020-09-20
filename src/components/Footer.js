@@ -1,4 +1,4 @@
-import { Button, IconButton, Toolbar, Typography } from '@material-ui/core';
+import { IconButton, Toolbar, Typography } from '@material-ui/core';
 import React from 'react';
 import { useTheme } from '@material-ui/core/styles';
 

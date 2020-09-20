@@ -2,6 +2,7 @@ import React from 'react';
 import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid'
+import { useTheme } from '@material-ui/core/styles';
 
 //Import CSS Styles
 import {useStyles} from '../styles/Global'
@@ -16,12 +17,13 @@ import {content} from '../assets/content/about/aboutContent'
 
 function About() {
   const classes=useStyles();
+  const theme = useTheme();
   return (
     <div>
       <TitleCard title={content.main.title} text={content.main.content} image={content.banner}/>
-      <Card className={classes.card}>
+      <Card className={classes.card} style={{backgroundColor:theme.palette.secondary.main}}>
       <br/>
-      <Typography variant='h5' align='center' gutterBottom style={{fontSize:'225%'}}>
+      <Typography variant='h5' align='center' gutterBottom style={{fontSize:'205%'}}>
         The Team
       </Typography>
       <Grid container spacing='1'>

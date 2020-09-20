@@ -13,6 +13,9 @@ import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 
+//Import styles
+import { useStyles } from '../../styles/Global'
+
 import About from '../../views/About'
 import Blog from '../../views/Blog'
 import Home from '../../views/Home'
@@ -46,6 +49,7 @@ function ElevationScroll(props) {
 }
 
 function NavBar() {
+  const classes=useStyles();
     return (
       <Router>
         <CssBaseline>
@@ -65,8 +69,8 @@ function NavBar() {
                   <Button href="/blog" color='inherit'>
                     Blog
                   </Button>
-                  <Button href="https://docs.google.com/forms/d/e/1FAIpQLSfeqA-btyc8kVmd-kDwwbtMBgec1hx9DfjBdeHhY8T3QSTB_Q/viewform" color='inherit'>
-                    Sign Up
+                  <Button className={classes.root} href="https://docs.google.com/forms/d/e/1FAIpQLSfeqA-btyc8kVmd-kDwwbtMBgec1hx9DfjBdeHhY8T3QSTB_Q/viewform" color='inherit'>
+                    Join Us
                   </Button>
                 </div>
 

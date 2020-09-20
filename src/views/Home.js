@@ -23,7 +23,7 @@ function Home(props) {
       <TitleCard title={content.headline.title} text={content.headline.text} image={content.banner}/>
       <Card className={classes.card} style={{backgroundColor: theme.palette.secondary.main}}>
         <br/>
-        <Typography variant='h5' align='center' gutterBottom style={{fontSize:'225%', color: theme.palette.secondary.contrastText}}>
+        <Typography variant='h5' align='center' gutterBottom style={{fontSize:'205%', color: theme.palette.secondary.contrastText}}>
           Our Goals
         </Typography>
         <Grid container spacing='1'>
