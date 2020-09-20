@@ -52,7 +52,7 @@ function NavBar() {
           <ElevationScroll>
             <AppBar color='primary' position='sticky' style={styles.bar}>
               <Toolbar>
-                <Typography variant='h5' color='inherit'>
+                <Typography variant='h6' color='inherit'>
                   Students for Refugees Society
                 </Typography>
                 <div style={styles.links}>

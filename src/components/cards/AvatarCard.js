@@ -7,34 +7,19 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import {Avatar, Divider} from '@material-ui/core'
 
-const size = '150px'
-
-const styles = {
-    
-    avatar: {
-        height: size,
-        width: size,
-        marginTop: '10px',
-        marginLeft: 'auto',
-        marginRight: 'auto',
-        objectFit: 'none'
-    },
-    card: {
-        height: "400px",
-        margin: "10px",
-    }
-}
+// Import CSS
+import {avatarStyle} from '../../styles/Global' 
 
 function AvatarCard(props) {
     return (
         <div>
-            <Card style={styles.card}>
+            <Card style={avatarStyle.card}>
                 <CardMedia>
-                    <Avatar alt={props.name} src={props.image} style={styles.avatar}/>
+                    <Avatar alt={props.name} src={props.image} style={avatarStyle.avatar}/>
 
                 </CardMedia>
-                <CardContent style={styles.card}>
-                    <Typography gutterBottom variant="h4" align="center">
+                <CardContent style={avatarStyle.card}>
+                    <Typography gutterBottom variant="h5" align="center">
                         {props.name}
                     </Typography>
                     <Divider variant="middle" />
@@ -44,10 +29,7 @@ function AvatarCard(props) {
                     </Typography>
                     <br/>
                 </CardContent>
-
             </Card>
-            
-
         </div>
 
     );

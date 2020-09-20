@@ -4,71 +4,28 @@ import Card from '@material-ui/core/Card';
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid'
 
-// Import CSS Styles
+//Import CSS Styles
 import {titleStyle, cardStyle} from '../styles/Global'
-import OWEEK from '../assets/images/sfrs oweek 2019.png'
+
+//Import custom components
 import AvatarCard from '../components/cards/AvatarCard';
+import TitleCard from '../components/cards/TitleCard';
 
-//Import Images
-import JONG from '../assets/images/JoshuaOng_Headshot.jpg'
+//Import content
+import {content} from '../assets/content/about/aboutContent'
 
-
-const AboutContent = {
-  main: {
-    title: "About Us",
-    content: "The Students for Refugees Society is the first and only club at The Universty of Melbourne striving to improve refugee outcomes. Founded in 2019 we are officially affiliated with the University of Melbourne Student Union."
-  },
-  team: [
-    {
-      name: 'Joshua Ong',
-      title: 'President',
-      image: JONG
-    },
-    {
-      name: 'Jessica Lee',
-      title: 'Vice President',
-      image: JONG
-    },
-    {
-      name: 'Tzur Ko Green Rochvarger',
-      title: 'Secretary',
-      image: JONG
-    },
-    {
-      name: 'Alizee Schucht',
-      title: 'Treasurer',
-      image: JONG
-    },
-    {
-      name: 'Victoria Schucht',
-      title: 'Committee',
-      image: JONG
-    },
-    {
-      name: 'Lachlan Andrews',
-      title: 'Committee',
-      image: JONG
-    },
-    {
-      name: 'Renee Goh',
-      title: 'Committee',
-      image: JONG
-    },
-
-  ]
-}
 
 function About() {
     return (
       <div>
-        <MediaCard title={AboutContent.main.title} text={AboutContent.main.content} image={OWEEK} contentStyle={titleStyle.content} mediaStyle={titleStyle.media} cardStyle={titleStyle.card}/>
+        <TitleCard title={content.main.title} text={content.main.content} image={content.banner}/>
         <Card style={titleStyle.card}>
         <br/>
-        <Typography variant='h4' align='center' gutterBottom>
+        <Typography variant='h5' align='center' gutterBottom style={{fontSize:'225%'}}>
           The Team
         </Typography>
         <Grid container spacing='1'>
-          {AboutContent.team.map(team => (
+          {content.team.map(team => (
             <Grid item key={team.name} xs='6' md='3'>
               <AvatarCard name={team.name} title={team.title} image={team.image} />            
             </Grid>

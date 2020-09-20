@@ -1,13 +1,15 @@
 export const titleStyle = {
     media: {
        //paddingTop: '56.25%', // 16:9
-       paddingLeft: '325px',
+       //paddingLeft: 'auto',
+       marginLeft:'auto',
        position: 'relative',
-       marginBottom: '50px',
+       marginBottom: 'auto',
        //objectFit: "cover",
-       height: "100%",
-       width: "100%",
-       //maxHeight: '550px'
+       height: "500px",
+       width: "auto",
+       //maxHeight: '550px',
+       //minHeight: '450px'
     },
     card: {
        position: 'relative',
@@ -15,11 +17,11 @@ export const titleStyle = {
     },
     content: {
        position: 'absolute',
-       top: '150px',
+       top: '170px',
        left: '10px',
        color: 'black',
-       backgroundColor: '',
-       width: '515px',
+       backgroundColor: 'white',
+       width: '500px',
       },  
 };
 
@@ -37,4 +39,19 @@ export const cardStyle = {
       title: {
         align: 'center',
       }  
+}
+
+export const avatarStyle = {
+    avatar: {
+        height: '150px',
+        width: '150px',
+        marginTop: '10px',
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        objectFit: 'none'
+    },
+    card: {
+        height: "300px",
+        margin: "10px",
+    }
 }
