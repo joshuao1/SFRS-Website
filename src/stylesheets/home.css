@@ -6,6 +6,7 @@ body{
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    overflow-y: hidden;
     position: relative;
 }
 
@@ -30,6 +31,31 @@ body{
 
 #intro .cta h1 b{
     font-weight: 400;
+}
+
+.section-heading{
+    font-family: "Source Sans Pro","Gill Sans","Trebuchet MS","Arial",sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgb(48, 48, 48);
+}
+
+#goals .section-heading{
+    color: white;
+}
+
+#goals{
+    padding: 10px 5% 20px 5%;
+    background: #56CCF2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #2F80ED, #56CCF2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #2F80ED, #56CCF2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+#goals .goals-container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
 }
 
 @media(max-width:578px){
