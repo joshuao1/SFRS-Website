@@ -1,0 +1,222 @@
+.navbar-container{
+    background-color: transparent;
+    display: flex;
+    width: 95vw;
+    position: fixed;
+    top: 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 25px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05), 0 6px 20px 0 rgba(0, 0, 0, 0.025); */
+    z-index: 1000;
+}
+
+.navbar-logo{
+    margin-left: 10px;
+    margin-bottom: 0;
+    text-decoration: none;
+}
+
+.navbar-logo a{
+    font-family: "Times New Roman", Times, serif;
+    color: rgb(48, 48, 48);
+    font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.navbar-navlinks{
+    display: flex;
+    justify-content: right;
+}
+
+.navbar-navlinks ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+    font-size: 1.1rem;
+}
+
+.navbar-navlinks ul li a, .navbar-navlinks ul li{
+    margin: 0 7.5px;
+    color: rgb(48, 48, 48);
+    text-decoration: none;
+    position: relative;
+    font-family: "Source Sans Pro","Gill Sans","Trebuchet MS","Arial",sans-serif;
+}
+
+.navbar-navlinks ul li a:hover, .navbar-navlinks ul li:hover{
+    color: #094183;
+    text-decoration: none;
+}
+
+.navbar-navlinks ul li .navbar-navlink--active{
+    color: #094183;
+    font-weight: 600;
+}
+
+.navbar-navlinks ul li .navbar-navlink--active:after{
+    content: "";
+    background-color: #094183;
+    height: 2.5px;
+    width: 100%;
+    left: 0;
+    bottom: -5px;
+    position: absolute;
+}
+
+.navbar-navlinks ul li a:after{
+    content: "";
+    background-color: #094183;
+    height: 2.5px;
+    width: 0;
+    left: 50%;
+    bottom: -5px;
+    position: absolute;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.navbar-navlinks ul li a:not([role="button"]):hover:after{
+    width: 100%;
+    left: 0;
+}
+
+.navbar-navlinks ul li a[role="button"]:hover{
+    background-color: transparent;
+}
+
+.navbar-navlinks ul li a[role="button"]{
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+.login-modal .modal-header{
+    padding: 0;
+}
+
+.login-modal button.close{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.btn-contact{
+    border: 2px solid #555555;
+    border-radius: 4px;
+    background-color: white;
+    transition: 300ms;
+    padding: 2.5px 7.5px;
+}
+
+.btn-contact:hover{
+    background-color: #555555;
+    color: white;
+}
+
+.toggle-btn{
+    position: absolute;
+    z-index: 250;
+    right: 25px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+.toggle-btn .line{
+    background-color: transparent;
+    height: 3px;
+    width: 35px;
+    margin: 3px 0;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.toggle-btn .line:before,
+.toggle-btn .line:after{
+    position: absolute;
+    content: '';
+    height: inherit;
+    width: inherit;
+    background-color: rgb(48, 48, 48);
+    border-radius: 4px;
+}
+
+.toggle-btn .line:before{
+    top: -5px;
+}
+
+.toggle-btn .line:after{
+    bottom: -5px;
+}
+
+.toggle-btn.open .line{
+    transform: rotate(135deg);
+}
+
+
+.toggle-btn.open .line:before,
+.toggle-btn.open .line:after{
+    transform: rotate(90deg);
+}
+
+.toggle-btn.open .line:before{
+    top: 0;
+}
+
+.toggle-btn.open .line:after{
+    bottom: 0;
+}
+
+@media(max-width:578px){
+
+    .navbar-navlinks {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: white;
+        top: 0;
+        left: 0;
+        transition: transform 0.5s ease;
+    }
+
+    .navbar-navlinks.mobile.closed{
+        transform: translateY(-100%);
+    }
+
+    .navbar-navlinks.mobile.open{
+        transform: translateY(0);
+    }
+
+    .navbar-navlinks.mobile ul{
+        width: 100%;
+        padding-left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-navlinks.mobile ul li{
+        margin: 20px 0;
+    }
+
+    .navbar-container{
+        justify-content: space-between;
+    }
+
+    .navbar-navlink{
+        font-size: 20px;
+    }
+}
+
+@media(min-width: 578px){
+
+    .toggle-btn{
+        display: none;
+    }
+}

@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid'
 import { useTheme } from '@material-ui/core/styles';
 
 //Import CSS Styles
-import {useStyles} from '../styles/styles'
+import {useStyles} from '../stylesheets/styles'
 
 //Import custom components
 import AvatarCard from '../components/cards/AvatarCard';
@@ -29,13 +29,13 @@ function About() {
       <Grid container spacing='1'>
         {content.team.map(team => (
           <Grid item key={team.name} xs='6' md='3'>
-            <AvatarCard name={team.name} title={team.title} image={team.image} />            
+            <AvatarCard name={team.name} title={team.title} image={team.image} />
           </Grid>
         ))}
       </Grid>
     </Card>
     </div>
-    
+
     )
   }
 

@@ -6,7 +6,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import {CardActionArea, Divider} from '@material-ui/core'
 
-import {useStyles} from '../../styles/styles'
+import {useStyles} from '../../stylesheets/styles'
 
 
 
@@ -14,8 +14,8 @@ function BlogCard(props) {
   const classes=useStyles();
   return (
     <CardActionArea>
-        <Card className={classes.blogCard}> 
-        
+        <Card className={classes.blogCard}>
+
             <CardMedia
             component='img'
             image={props.image}
@@ -26,7 +26,7 @@ function BlogCard(props) {
                 <Typography gutterBottom variant="subtitle2" align="center" className={classes.blogText}>
                     {props.date}
                 </Typography>
-              
+
                 <Typography gutterBottom variant="h5" align="center" className={classes.blogText}>
                     {props.title}
                 </Typography>

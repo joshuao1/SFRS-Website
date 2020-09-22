@@ -6,13 +6,13 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import {Divider} from '@material-ui/core'
 
-import {useStyles} from '../../styles/styles'
+import {useStyles} from '../../stylesheets/styles'
 
 
 function IconCard(props) {
   const classes=useStyles();
   return (
-    <Card className={classes.iconCard}> 
+    <Card className={classes.iconCard}>
       <CardMedia
         component='img'
         image={props.image}

@@ -1,39 +1,63 @@
-import React from 'react';
+import React, { useEffect } from "react";
+import {
+	BrowserRouter as Router,
+	Switch,
+	Route
+} from "react-router-dom";
+import AOS from 'aos';
 
-import NavBar from "./components/navbar/Navbar.js";
-import Footer from './components/Footer.js';
+// components
+import Navbar from "./components/Navbar.js";
 
-import { createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/styles';
+// pages
+import About from "./pages/About";
+import Error from "./pages/Error";
+import Home  from "./pages/Home";
+import Blog  from "./pages/Blog";
 
-const theme = createMuiTheme({
-  palette: {
-    primary: {
-      // Purple and green play nicely together.
-      //main: '#1976d2',
-      //Red 700
-      main: '#d32f2f',
-      dark: '#9a0007',
-      light: '#ff6659',
-    },
-    secondary: {
-      //
-      main: '#eceff1',
-      contrastText: 'black',
-    },
-  },
-});
+import 'aos/dist/aos.css';
 
-function App() {
-  return (
-    <div>
-      <ThemeProvider theme={theme}>
-        <NavBar/>
-        <Footer/>
-      </ThemeProvider>
-    </div>
+const App = (props) => {
 
-  );
+	useEffect(() => {
+		AOS.init();
+	}, []);
+
+	return (
+		<Router>
+
+			<Navbar
+				location={ props }/>
+
+			<Switch>
+
+				{/* landing page */}
+				<Route
+					exact
+					path="/"
+					component={ Home }/>
+
+				{/* about page */}
+				<Route
+					exact
+					path="/about"
+					component={ About }/>
+
+				{/* blog page */}
+				<Route
+					exact
+					path="/blog"
+					component={ Blog }/>
+
+				{/* error page */}
+				<Route
+					component={ Error }
+					path="/*"/>
+
+			</Switch>
+
+		</Router>
+	);
 }
 
 export default App;
