@@ -17,7 +17,7 @@ const theme = createMuiTheme({
       light: '#ff6659',
     },
     secondary: {
-      // 
+      //
       main: '#eceff1',
       contrastText: 'black',
     },
@@ -32,7 +32,7 @@ function App() {
         <Footer/>
       </ThemeProvider>
     </div>
-    
+
   );
 }
 
