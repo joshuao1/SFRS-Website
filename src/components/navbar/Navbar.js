@@ -14,17 +14,12 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 
 //Import styles
-import { useStyles } from '../../styles/styles'
+import { useStyles } from '../../stylesheets/styles'
 
-import About from '../../views/About'
-import Blog from '../../views/Blog'
-import Home from '../../views/Home'
+import About from '../../pages/About'
+import Blog from '../../pages/Blog'
+import Home from '../../pages/Home'
 
-const posts = [
-    {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
-    {id: 2, title: 'Installation', content: 'You can install React from npm.'}
-  ];
-  
 const styles = {
   links: {
     marginLeft: 'auto',
@@ -84,7 +79,7 @@ function NavBar() {
             <About />
           </Route>
           <Route path="/blog">
-            <Blog posts={posts} />
+            <Blog/>
           </Route>
           <Route path="/">
             <Home />

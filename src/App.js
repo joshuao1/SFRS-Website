@@ -12,13 +12,11 @@ const theme = createMuiTheme({
       // Purple and green play nicely together.
       //main: '#1976d2',
       //Red 700
-      main: '#d32f2f',
-      dark: '#9a0007',
-      light: '#ff6659',
+      main: '#ffadad',
     },
     secondary: {
       //
-      main: '#eceff1',
+      main: '#f0f0f0',
       contrastText: 'black',
     },
   },

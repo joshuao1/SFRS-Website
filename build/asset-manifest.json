@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/static/js/main.c5120977.chunk.js",
-    "main.js.map": "/static/js/main.c5120977.chunk.js.map",
+    "main.js": "/static/js/main.b8711f56.chunk.js",
+    "main.js.map": "/static/js/main.b8711f56.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.f141e9ec.js",
     "runtime-main.js.map": "/static/js/runtime-main.f141e9ec.js.map",
-    "static/js/2.8ccc4587.chunk.js": "/static/js/2.8ccc4587.chunk.js",
-    "static/js/2.8ccc4587.chunk.js.map": "/static/js/2.8ccc4587.chunk.js.map",
+    "static/js/2.672ff891.chunk.js": "/static/js/2.672ff891.chunk.js",
+    "static/js/2.672ff891.chunk.js.map": "/static/js/2.672ff891.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d6e3cc9396f7e06abb5d855c544dccaf.js": "/precache-manifest.d6e3cc9396f7e06abb5d855c544dccaf.js",
+    "precache-manifest.851a872deafa178803c19e7a25542954.js": "/precache-manifest.851a872deafa178803c19e7a25542954.js",
     "service-worker.js": "/service-worker.js",
-    "static/js/2.8ccc4587.chunk.js.LICENSE.txt": "/static/js/2.8ccc4587.chunk.js.LICENSE.txt",
+    "static/js/2.672ff891.chunk.js.LICENSE.txt": "/static/js/2.672ff891.chunk.js.LICENSE.txt",
     "static/media/IGM.jpg": "/static/media/IGM.10ca9cdc.jpg",
-    "static/media/JoshuaOng_Headshot.jpg": "/static/media/JoshuaOng_Headshot.ce164942.jpg",
     "static/media/UMSUnobg.png": "/static/media/UMSUnobg.771d0e4d.png",
     "static/media/graduated.svg": "/static/media/graduated.8aab010c.svg",
     "static/media/grass.svg": "/static/media/grass.e7582d9b.svg",
     "static/media/group.svg": "/static/media/group.a8110972.svg",
+    "static/media/jessica_lee_headshot.jpg": "/static/media/jessica_lee_headshot.d0882b09.jpg",
     "static/media/network.svg": "/static/media/network.9011b4b2.svg",
     "static/media/refugee_legal_banner.jpg": "/static/media/refugee_legal_banner.73dbadf9.jpg",
-    "static/media/sfrs logo cropped.jpg": "/static/media/sfrs logo cropped.7c8cd22b.jpg",
+    "static/media/renee_goh_headshot.jpg": "/static/media/renee_goh_headshot.d1580738.jpg",
     "static/media/sfrs oweek 2019.png": "/static/media/sfrs oweek 2019.42145f37.png",
     "static/media/sfrs trivia night.png": "/static/media/sfrs trivia night.7e41aa4c.png",
     "static/media/sfrs_logo_dark.jpg": "/static/media/sfrs_logo_dark.8ef1ada2.jpg",
@@ -26,7 +26,7 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f141e9ec.js",
-    "static/js/2.8ccc4587.chunk.js",
-    "static/js/main.c5120977.chunk.js"
+    "static/js/2.672ff891.chunk.js",
+    "static/js/main.b8711f56.chunk.js"
   ]
 }

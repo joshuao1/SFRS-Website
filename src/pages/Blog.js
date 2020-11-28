@@ -8,7 +8,7 @@ import TitleCard from '../components/cards/TitleCard';
 import BlogCard from '../components/cards/BlogCard';
 
 // Import CSS Styles
-import {useStyles} from '../styles/styles'
+import {useStyles} from '../stylesheets/styles'
 
 import {content} from '../assets/content/blog/blogContent'
 

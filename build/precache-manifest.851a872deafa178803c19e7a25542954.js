@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "29e33a2147f511e611410fe8b6d6df83",
+    "revision": "f8505335652703e24b81ea772a0c41bd",
     "url": "/index.html"
   },
   {
-    "revision": "b623dda27927c12fcf22",
-    "url": "/static/js/2.8ccc4587.chunk.js"
+    "revision": "4befd1ae21207db2215b",
+    "url": "/static/js/2.672ff891.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/static/js/2.8ccc4587.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.672ff891.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "897327ca4a63fd7d3103",
-    "url": "/static/js/main.c5120977.chunk.js"
+    "revision": "e1210751b1c8147d6388",
+    "url": "/static/js/main.b8711f56.chunk.js"
   },
   {
     "revision": "d6368b5ecd134c27111d",
@@ -22,10 +22,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "10ca9cdc6cd2384a1dca299fe826c0bd",
     "url": "/static/media/IGM.10ca9cdc.jpg"
-  },
-  {
-    "revision": "ce1649421ae751ab94f3a0d77a0bbd7f",
-    "url": "/static/media/JoshuaOng_Headshot.ce164942.jpg"
   },
   {
     "revision": "771d0e4d498bf3debf0db6f464437e13",
@@ -44,6 +40,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/group.a8110972.svg"
   },
   {
+    "revision": "d0882b0950bb17e7d059cfd258d5caa6",
+    "url": "/static/media/jessica_lee_headshot.d0882b09.jpg"
+  },
+  {
     "revision": "9011b4b22e956a097de8695307a9a0ab",
     "url": "/static/media/network.9011b4b2.svg"
   },
@@ -52,8 +52,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/refugee_legal_banner.73dbadf9.jpg"
   },
   {
-    "revision": "7c8cd22b73742829b2f80ab648bcdc73",
-    "url": "/static/media/sfrs logo cropped.7c8cd22b.jpg"
+    "revision": "d15807381d646bc8d74617efec2f9c43",
+    "url": "/static/media/renee_goh_headshot.d1580738.jpg"
   },
   {
     "revision": "42145f37e02e339e71632296d16c2e56",

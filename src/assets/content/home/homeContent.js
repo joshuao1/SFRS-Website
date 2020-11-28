@@ -3,7 +3,6 @@ import EDUC from "../../images/graduated.svg"
 import GRASS from "../../images/grass.svg"
 import CONNECT from "../../images/network.svg"
 import GROUP from "../../images/group.svg"
-import LOGO from "../../images/sfrs logo cropped.jpg"
 import LOGODARK from '../../images/sfrs_logo_dark.jpg'
 
 export const content = {

@@ -5,7 +5,7 @@ import Grid from '@material-ui/core/Grid'
 import { useTheme } from '@material-ui/core/styles';
 
 //Import CSS Styles
-import {useStyles} from '../styles/styles'
+import {useStyles} from '../stylesheets/styles'
 
 //Import custom components
 import AvatarCard from '../components/cards/AvatarCard';

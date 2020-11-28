@@ -58,8 +58,9 @@ export const useStyles = makeStyles({
         objectFit: 'none'
     },
     avatarCard: {
-        height: "300px",
+        height: "350px",
         margin: "10px",
+        paddingTop: "15px"
     },
     blogCard: {
         height: "400px",

@@ -1,6 +1,9 @@
 //Import Images
-import JONG from '../../images/JoshuaOng_Headshot.jpg'
+import JLEE from '../../images/jessica_lee_headshot.jpg'
+import RGOH from '../../images/renee_goh_headshot.jpg'
 import OWEEK from '../../images/sfrs oweek 2019.png'
+
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 
 export const content = {
@@ -11,40 +14,35 @@ export const content = {
     banner: OWEEK,
     team: [
       {
-        name: 'Joshua Ong',
+        name: 'Lachlan Andrews',
         title: 'President',
-        image: JONG
+        image: AccountCircleIcon
       },
       {
         name: 'Jessica Lee',
         title: 'Vice President',
-        image: JONG
-      },
-      {
-        name: 'Tzur Ko Geen Rochvarger',
-        title: 'Secretary',
-        image: JONG
-      },
-      {
-        name: 'Alizee Schucht',
-        title: 'Treasurer',
-        image: JONG
-      },
-      {
-        name: 'Victoria Schucht',
-        title: 'Committee',
-        image: JONG
-      },
-      {
-        name: 'Lachlan Andrews',
-        title: 'Committee',
-        image: JONG
+        image: JLEE
       },
       {
         name: 'Renee Goh',
-        title: 'Committee',
-        image: JONG
+        title: 'Secretary',
+        image: RGOH
       },
-  
+      {
+        name: 'Snehaa Easwari',
+        title: 'Treasurer',
+        image: AccountCircleIcon
+      },
+      {
+        name: 'Tzur Rochvarger',
+        title: 'Committee',
+        image: AccountCircleIcon
+      },
+      {
+        name: 'Emily',
+        title: 'Committee',
+        image: AccountCircleIcon
+      },
+
     ]
   }

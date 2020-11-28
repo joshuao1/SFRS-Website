@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import {Avatar, Divider} from '@material-ui/core'
 
 // Import CSS
-import {useStyles} from '../../styles/styles' 
+import {useStyles} from '../../stylesheets/styles' 
 
 function AvatarCard(props) {
     const classes=useStyles();
