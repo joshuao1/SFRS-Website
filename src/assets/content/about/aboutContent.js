@@ -39,7 +39,7 @@ export const content = {
         image: AccountCircleIcon
       },
       {
-        name: 'Emily',
+        name: 'Emily McKay',
         title: 'Committee',
         image: AccountCircleIcon
       },
